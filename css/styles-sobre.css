@@ -1,0 +1,114 @@
+#sobre{
+    align-items: center;
+    display: flex;
+    min-height: 90vh;
+    justify-content: space-between;
+    padding: 0 10vw;
+    width: 100%;
+}
+
+.container{
+    margin-top: 50px;
+    min-height: 90vh;
+    width: 50%;
+}
+
+@media (max-width: 600px){
+    #sobre{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.bar{
+    background-color: var(--powder-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 200px;
+}
+
+.html, .css, .javascript, .react, .java, .excel, .pt-br, .en{
+    align-items: center;
+    color: var(--honeydew);
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 100;
+    justify-content: center;
+}
+
+.html, .css{
+    background-color: var(--celadon-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 150px;
+}
+
+.javascript{
+    background-color: var(--celadon-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 110px;
+}
+
+.react{
+    background-color: var(--celadon-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 70px;
+}
+
+.java{
+    background-color: var(--celadon-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 30px;
+}
+
+.excel{
+    background-color: var(--celadon-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 160px;
+}
+
+.pt-br{
+    background-color: var(--celadon-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 200px;
+}
+
+.en{
+    background-color: var(--celadon-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 110px;
+}
+
+h1, h3{
+    color: var(--imperial-red);
+}
+
+h1{
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+h3{
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+h5{
+    color: var(--honeydew);
+    font-weight: 100;
+    margin: 5px 0;
+}

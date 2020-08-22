@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --celadon-blue: #457B9D;
+    --honeydew: #F1FAEE;
+    --imperial-red: #E63946;
+    --powder-blue: #A8DADC;
+    --prussian-blue: #1D3557;
+}
+
+body{
+    background-color: var(--prussian-blue);
+}
+
+.navbar{
+    background-color: var(--prussian-blue);
+    overflow: hidden;
+    padding: 10px 20px 20px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.navbar a{
+    color: var(--imperial-red);
+    display: block;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:focus{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.navbar i{
+    color: var(--imperial-red);
+    display: none;
+    font-size: 2em;
+}
+
+@media (max-width: 600px){
+    .navbar i{
+        display: block;
+        float: right;
+    }
+    .navbar a{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .navbar.responsive{
+        padding: 5px;
+    }
+
+    .navbar.responsive i{
+        color: var(--imperial-red);
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    
+    .navbar.responsive a{
+        color: var(--imperial-red);
+        display: block;
+        float: none;
+        padding: 8px 2px;
+    }
+}
+
+#home{
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+}
+
+#home .text h1{
+    color: var(--imperial-red);
+    font-size: 4em;
+    font-weight: 100;
+    text-align: center;
+}
+
+#home .text h3{
+    color: var(--imperial-red);
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.icon-home{
+    width: 40%;
+}
+
+@media (max-width: 600px){
+    #home{
+        flex-direction: column;
+    }
+
+    #home .text h1{
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+    #home .text h3{
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .icon-home{
+        width: 90%;
+    }
+}
+
+footer{
+    align-items: center;
+    color: var(--imperial-red);
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    height: 10vh;
+    justify-content: center;
+}
+
+footer p:nth-child(2){
+    font-size: 0.8em;
+}

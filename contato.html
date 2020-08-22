@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a79202eb1e.js" crossorigin="anonymous"></script>
+    <!--Importar ícones-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--Importar Fontes -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-sobre.css">
+    <link rel="stylesheet" href="./css/styles-contato.css">
+    <!--Importar CSS -->
+    <title>Liz Vidotti</title>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li onclick="dropdown()">
+            <i class="fas fa-bars"></i>
+        </li>
+        <a href="./index.html">
+            <li> HOME </li>
+        </a>
+        <a href="./sobre.html">
+            <li> SOBRE MIM </li>
+        </a>
+        <a href="./contato.html">
+            <li> CONTATO </li>
+        </a>
+    </ul>
+
+    <section id="contato" class="section">
+        <div class="container-contato">
+            <img class="icon-contact" src="./img/chatbot.svg" alt="">
+            <form class="form">
+                <h3> Fale comigo! </h3>
+                <input type="text" name="name" id="name" placeholder="nome">
+                <input type="email" name="email" id="email" placeholder="e-mail">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="sua mensagem aqui"></textarea>
+                <input type="button" value="Enviar" class="submit">
+            </form>
+        </div>
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/elisetevidotti/" target="blank"><i class="fab fa-linkedin-in"></i></a> <!--linkedin-->
+            <a href="https://github.com/lizvidotti91" target="blank"><i class="fab fa-github"></i></a> <!--github-->
+            <a href="https://codepen.io/lizvidotti91" target="blank"><i class="fab fa-codepen"></i></a> <!--codepen-->
+            <a href="https://twitter.com/Lizvidotti" target="blank"><i class="fab fa-twitter"></i></a> <!--twitter-->
+            <a href="mailto:liz.vidotti@gmail.com" target="blank"><i class="fas fa-at"></i></a> <!--email-->
+        </div>
+    </section>
+
+    <footer>
+        <p> &copy; Liz Vidotti </p>
+        <p> Fonte das imagens: https://www.pixeltrue.com/illustrations </p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
