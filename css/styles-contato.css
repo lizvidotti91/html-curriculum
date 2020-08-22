@@ -4,7 +4,7 @@
     flex-direction: column;
     min-height: 90vh;
     justify-content: center;
-    padding: 30vw 10vw 0;
+    padding-top: 5vw;
     width: 100%;
 }
 
@@ -20,6 +20,10 @@
 }
 
 @media (max-width: 600px){
+    #contato{
+        padding-top: 10vw;
+    }
+
     .icon-contact{
         width: 90vw;
     }
